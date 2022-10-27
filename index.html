@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
+        rel="stylesheet">
+    <link rel="stylesheet" 
+        href="style.css" 
+        media="screen" 
+        charset="utf-8">
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__img" 
+          src="./eisenhower-matrix.jpg" 
+          alt="The Eisenhower matrix">
+      <a class="header__link" 
+          href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+      <section class="section add-section">
+        <h3 class="section__header add-section__header">Add Item</h3>
+        <div class="add-section__wrapper">
+          <input id="new-task" 
+              class="add-section__input edit-input" 
+              type="text">
+          <button class="add-section__btn">Add</button>
+        </div>
+      </section>
+      <section class="section todo-section">
+        <h3 class="section__header">Todo</h3>
+        <ul id="incomplete-tasks" class="task-list">
+          <li class="task-list__item">
+            <input type="checkbox" class="task-list__checkbox task-checkbox">
+            <label class="task-list__label task-name">Pay Bills</label>
+            <input type="text" class="edit-input task-list__edit-input">
+            <button class="task-list__edit-btn edit-btn">Edit</button>
+            <button class="task-list__delete-btn delete-btn">
+              <img src="./remove.svg" 
+                  alt="delete button" 
+                  class="delete-btn__icon">
+            </button>
+          </li>
+          <li class="task-list__item task-list__item_mode_edit">
+            <input type="checkbox" class="task-list__checkbox task-checkbox">
+            <label class="task-list__label task-name">Go Shopping</label>
+            <input type="text" 
+                value="Go Shopping" 
+                class="edit-input task-list__edit-input">
+            <button class="task-list__edit-btn edit-btn">Save</button>
+            <button class="task-list__delete-btn delete-btn">
+              <img src="./remove.svg" 
+                  alt="delete button" 
+                  class="delete-btn__icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="section done-section">
+        <h3 class="section__header">Completed</h3>
+        <ul id="completed-tasks" class="task-list done-list">
+          <li class="task-list__item">
+            <input type="checkbox" class="task-list__checkbox task-checkbox" checked>
+            <label class="task-list__label task-name">See the Doctor</label>
+            <input type="text" class="edit-input task-list__edit-input">
+            <button class="task-list__edit-btn edit-btn">Edit</button>
+            <button class="task-list__delete-btn delete-btn">
+              <img src="./remove.svg" 
+                  alt="delete button" 
+                  class="delete-btn__icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
