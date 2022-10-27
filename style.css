@@ -174,11 +174,11 @@
   display: none;
 }
 
-.item_mode_edit .edit-input {
+.task-list__item_mode_edit .edit-input {
   display: inline-block;
   width: 224px;
 }
 
-.item_mode_edit .task-name {
+.task-list__item_mode_edit .task-name {
   display: none;
 }
